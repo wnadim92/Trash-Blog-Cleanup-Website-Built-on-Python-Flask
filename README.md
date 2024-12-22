@@ -1,5 +1,8 @@
 # Trash Clean Up Blog
 
+## Sample Page 
+http://www.trash.ninja
+
 Trash Clean Up Blog is a web application that allows users to register, log in, and post information about trash clean-up activities. Users can upload photos, provide details about the location and date of the clean-up, and view historical posts.
 
 ## Features
