@@ -156,9 +156,9 @@ def register():
             return redirect(url_for('register'))
 
         # Hash the password, secret question, and secret answer before storing them
-        hashed_password = generate_password_hash(password, method='scrypt', salt_length=16)
-        hashed_secret_question = generate_password_hash(secret_question, method='scrypt', salt_length=16)
-        hashed_secret_answer = generate_password_hash(secret_answer, method='scrypt', salt_length=16)
+        hashed_password = generate_password_hash(password, method='pbkdf2:sha256', salt_length=16)
+        hashed_secret_question = generate_password_hash(secret_question, method='pbkdf2:sha256', salt_length=16)
+        hashed_secret_answer = generate_password_hash(secret_answer, method='pbkdf2:sha256', salt_length=16)
 
         # Insert the new user into the database
         cursor.execute("INSERT INTO users (username, password, hint, secret_question, secret_answer) VALUES (?, ?, ?, ?, ?)",
@@ -206,7 +206,7 @@ def set_new_password():
         username = session['reset_username']
 
         # Hash the new password before storing it
-        hashed_password = generate_password_hash(new_password, method='scrypt', salt_length=16)
+        hashed_password = generate_password_hash(new_password, method='pbkdf2:sha256', salt_length=16)
 
         # Update the user's password in the database
         conn = get_db()
