@@ -1,9 +1,16 @@
+# Trash Community
+#### Video Demo:  [<YouTube URL>](https://www.youtube.com/watch?v=qE22dt8dz8A)
+#### Description:
+
 # Trash Clean Up Blog
 
-## Sample Page 
-http://www.trash.ninja
-
 Trash Clean Up Blog is a web application that allows users to register, log in, and post information about trash clean-up activities. Users can upload photos, provide details about the location and date of the clean-up, and view historical posts.
+
+## About Us
+Welcome to the Trash Clean Up Blog. This page is dedicated to helping clean up the Earth that we all live in. Take a photo of a straw you picked up that would have been stuck in a turtle's nose, or a water bottle or plastic bag on the walk to the store from the parking lot in the trash bin that otherwise would have been in a whale's stomach. That piece of trash you throw away each day in the bin 20 steps away sure adds up. You make a big difference with that small single water bottle. If enough of us pick one up each day, we'll clean the earth! So if you want to take a picture of it, this page is for a blog for that you can share each day.
+
+## Disclaimer
+We are not responsible for any actions taken by users. Users must follow all local laws and regulations regarding safe trash disposal and handling of hazardous materials. We are not responsible for any inappropriate content posted by users. Keep this site clean. ust like a trash can. Keep yourself clean, this site clean as well as the earth.
 
 ## Features
 
@@ -26,7 +33,7 @@ Trash Clean Up Blog is a web application that allows users to register, log in, 
 - importlib-metadata 4.8.2
 - zipp 3.6.0
 - typing-extensions 3.10.0.2
-- SQLite3
+- gunicorn 20.1.0
 
 ## Installation
 
