@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Drop Off - Trash Clean Up Blog{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Drop Off</h2>
+    <form action="{{ url_for('drop_off') }}" method="post" enctype="multipart/form-data">
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item" required>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="file">Photo:</label>
+        <input type="file" id="file" name="file" accept="image/*">
+        
+        <div>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">
+                I confirm that I am following the laws in my area regarding proper disposal and hazardous items, and I agree to the terms of the <a href="{{ url_for('about') }}" target="_blank">About section</a>.
+            </label>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

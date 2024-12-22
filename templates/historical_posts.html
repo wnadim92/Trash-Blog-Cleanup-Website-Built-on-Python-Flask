@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Historical Posts - Trash Clean Up Blog{% endblock %}
+
+{% block content %}
+<h2>Historical Posts</h2>
+<div class="posts-container" id="posts-container">
+    {% if historical_posts %}
+        {% for post in historical_posts %}
+        <div class="post-tile">
+            <p><strong>Date:</strong> {{ post.date }}</p>
+            <p><strong>Location:</strong> {{ post.location }}</p>
+            <p><strong>Posted by:</strong> {{ post.username }}</p>
+            {% if post.photo %}
+            <img src="{{ url_for('static', filename=post.photo) }}" alt="Post Image" class="post-image">
+            {% endif %}
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>No posts available yet.</p>
+    {% endif %}
+</div>
+<a href="{{ url_for('home') }}">Back to Home</a>
+{% endblock %}
+
+<style>
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.post-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-tile p {
+    margin: 0 0 10px;
+    color: #666;
+}
+</style>

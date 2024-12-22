@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Register - Trash Clean Up Blog{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Register</h2>
+    <form action="{{ url_for('register') }}" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="hint">Password Hint:</label>
+        <input type="text" id="hint" name="hint">
+        
+        <label for="secret_question">Secret Question:</label>
+        <input type="text" id="secret_question" name="secret_question" required>
+        
+        <label for="secret_answer">Secret Answer:</label>
+        <input type="text" id="secret_answer" name="secret_answer" required>
+        
+        <p>Please do not use common secret questions and answers that you use on other sites.</p>
+        
+        <button type="submit">Register</button>
+    </form>
+</div>
+{% endblock %}
