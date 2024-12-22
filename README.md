@@ -1,6 +1,4 @@
 # Trash Community
-#### Video Demo:  [<YouTube URL>](https://www.youtube.com/watch?v=qE22dt8dz8A)
-#### Description:
 
 # Trash Clean Up Blog
 
