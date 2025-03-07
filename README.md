@@ -64,7 +64,7 @@ We are not responsible for any actions taken by users. Users must follow all loc
     flask run
     ```
 
-2. Open your web browser and go to `http://127.0.0.1:5000`.
+2. Open your web browser and go to `http://127.0.0.1:3000`.
 
 ## Project Structure
 
