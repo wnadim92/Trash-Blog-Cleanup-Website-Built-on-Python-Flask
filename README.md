@@ -1,4 +1,4 @@
-# Trash Community
+# Trash Blog Cleanup Website - Built on Python Flask
 
 # Trash Clean Up Blog
 
