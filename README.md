@@ -16,7 +16,7 @@ We are not responsible for any actions taken by users. Users must follow all law
 - Password reset functionality
 - Post trash clean-up activities with photos
 - View historical posts
-- Ensure compliance with local disposal laws and regulations for safe trash disposal
+- Python, Flask, SQL backend
 
 ## Requirements
 
